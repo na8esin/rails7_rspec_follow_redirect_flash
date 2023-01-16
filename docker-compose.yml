@@ -6,4 +6,4 @@ services:
     - .:/usr/src:delegated
     tty: true
     ports:
-      - '9999:3000'
+      - ${RAILS_PORT:-9999}:3000
